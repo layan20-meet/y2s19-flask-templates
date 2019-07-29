@@ -1,1 +1,28 @@
 <!-- Put the HTML template for your page here! -->
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body class="background">
+	<h1>
+		kosa wwrq
+	</h1>
+	<p>
+		because it is the best
+	</p>
+--------------------------
+
+	<h1> FOOD!</h1>
+    <p> My favorite meals are: </p>
+    <h2> 1) smak </h2>
+    <h3> 2) l7me and btata bre </h3>
+    <ul>
+        {% for meal in meals %}
+        <li> {{meal}} </li>
+        {% endfor %}
+    </ul>
+
+
+</body>
+</html>
